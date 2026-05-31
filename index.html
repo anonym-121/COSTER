@@ -263,23 +263,65 @@
 
     
 
-<!-- Paper abstract -->
+<!-- Highlights -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            The generation of safety-critical traffic scenarios is essential for the training and evaluation of autonomous vehicles. Earlier approaches generally depended on oversimplified adversarial objectives and narrow agent modifications, thereby limiting the plausibility and diversity of generated scenarios. This work introduces COllision Snapshot guided TimE Reversed safety-critical scenario generation (COSTER), which identifies collision timesteps and locations based on learned traffic priors and constructs a collision snapshot by inserting a vehicle in contact with the existing vehicle in the real world traffic scenario. A time-reversed rollout based on a conditional variational autoencoder (CVAE) is then employed to reconstruct the trajectory of the inserted vehicle toward prior timesteps from the collision snapshot. Our experimental results demonstrate that COSTER outperforms existing methods in plausibility, diversity, and data efficiency. Furthermore, agents trained on COSTER-generated scenarios reduce collision rates by 31% in real-world out-of-distribution scenarios, leading to improved ego task completion.
-          </p>
+
+        <h2 class="title is-3">Highlights</h2>
+
+        <div class="columns is-centered">
+          
+          <!-- Video 1 -->
+          <div class="column">
+            <video
+              autoplay
+              controls
+              muted
+              loop
+              preload="metadata"
+              style="width: 100%; height: auto;"
+            >
+              <source src="static/videos/highlight_1.mp4" type="video/mp4">
+            </video>
+
+            <div class="box">
+              <p>
+                <strong>Collision snapshot construction.</strong><br>
+                COSTER identifies the highest-risk timestep and inserts a contextually plausible adversarial vehicle in contact with the target vehicle.
+              </p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="column">
+            <video
+              autoplay
+              controls
+              muted
+              loop
+              preload="metadata"
+              style="width: 100%; height: auto;"
+            >
+              <source src="static/videos/highlight_2.mp4" type="video/mp4">
+            </video>
+
+            <div class="box">
+              <p>
+                <strong>Time-reversed trajectory rollout.</strong><br>
+                COSTER generates physically feasible safety-critical scenarios by rolling out the inserted vehicle trajectory backward in time.
+              </p>
+            </div>
+          </div>
+
         </div>
+
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+<!-- End highlights -->
 
 
 <!-- Image results -->
