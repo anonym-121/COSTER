@@ -358,13 +358,13 @@
             src="static/images/teaser2.png"
             alt="."
             loading="lazy"
-            style="width: 50%; height: auto;"
+            style="width: 60%; height: auto;"
           >
 
           <div class="box has-text-left">
             <p>
               <strong>Collision snapshot determination</strong><br>
-              This figure illustrates the process of partitioning the map into local regions and determining the placement of both the target vehicle and a newly inserted adversarial vehicle. Among the local regions that overlap with the elliptical area centered on the target vehicle, the region with the highest velocity entropy is selected. The adversarial vehicle in the collision snapshot is then initialized by sampling its velocity, heading, and position from the vehicle distribution within the selected local region.
+              This figure illustrates the process of partitioning the map into local regions and determining the placement of a newly inserted adversarial vehicle with respect to the target vehicle. At a given collision timestep in the scenario, the local region with the highest velocity entropy among those overlapping the elliptical area centered on the target vehicle is selected. The adversarial vehicle in the collision snapshot is then initialized by sampling its position, velocity, and heading from the vehicle distribution within the selected local region.
             </p>
           </div>
         </div>
