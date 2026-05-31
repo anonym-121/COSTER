@@ -290,6 +290,22 @@ body {
   font-weight: 500;
 }
 
+.results-carousel .item .stacked-carousel-images {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.results-carousel .item .stacked-carousel-images figure {
+  width: 100%;
+  margin: 0;
+}
+
+.results-carousel .item .stacked-carousel-images figcaption {
+  margin-top: 1rem;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
