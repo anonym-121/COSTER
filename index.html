@@ -334,20 +334,20 @@
     src="static/images/app_1.png"
     alt="Time-reversed trajectory generation 1"
     loading="lazy"
-    style="width: 100%; height: auto; margin-bottom: 1rem;"
+    style="width: 80%; height: auto; margin-bottom: 1rem;"
   >
 
   <img
     src="static/images/app_2.png"
     alt="Time-reversed trajectory generation 2"
     loading="lazy"
-    style="width: 100%; height: auto;"
+    style="width: 80%; height: auto;"
   >
 
   <div class="box has-text-left" style="margin-top: 1rem;">
     <p>
-      <strong>Time-reversed trajectory rollout.</strong><br>
-      Starting from the collision snapshot, COSTER rolls the inserted vehicle trajectory backward in time using a conditional generative model.
+      <strong>Collision time determination.</strong><br>
+      This figure demonstrates the advantages of selecting collision locations based on velocity entropy. Compared with randomly selecting a collision timestep or using the final timestep, the velocity entropy-based approach tends to identify locations where collisions are more plausible and where a greater diversity of collision scenarios can occur. This suggests that the method preferentially selects regions that are both behaviorally realistic and rich in interaction complexity. 
     </p>
   </div>
 </div>
